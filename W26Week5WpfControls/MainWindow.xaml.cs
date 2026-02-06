@@ -57,5 +57,24 @@ namespace W26Week5WpfControls
 
             lblMessage.Content = gender;
         }
+
+        private void btnGetCity_Click(object sender, RoutedEventArgs e)
+        {
+            lblMessage.Content = cmbCities.Text;
+        }
+
+        private void cmbCities_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //lblMessage.Content = cmbCities.Text;
+            lblMessage.Content = ((ComboBoxItem)cmbCities.SelectedItem).Content;
+        }
+
+        private void lstCountries_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (lstCountries.SelectedItem != null)
+            {
+                lblMessage.Content = ((ListBoxItem)lstCountries.SelectedItem).Content;
+            }
+        }
     }
 }

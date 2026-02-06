@@ -32,5 +32,21 @@
             </StackPanel>
         </GroupBox>
         <Button x:Name="btnGetGender" Content="Get Gender" Canvas.Left="188" Canvas.Top="156" Width="157" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnGetGender_Click"/>
+        <ComboBox x:Name="cmbCities" Canvas.Left="225" Canvas.Top="217" Width="120" SelectionChanged="cmbCities_SelectionChanged" IsEditable="True">
+            <ComboBoxItem Content="Toronto"/>
+            <ComboBoxItem Content="Paris"/>
+            <ComboBoxItem Content="Nairobi"/>
+            <ComboBoxItem Content="Tokyo"/>
+            <ComboBoxItem Content="Sydney"/>
+        </ComboBox>
+        <Button x:Name="btnGetCity" Content="Get City" Canvas.Left="225" Canvas.Top="265" HorizontalAlignment="Left" VerticalAlignment="Center" Width="118" Click="btnGetCity_Click"/>
+        
+        <ListBox x:Name="lstCountries" Height="199" Width="184" Canvas.Left="413" Canvas.Top="34" SelectionChanged="lstCountries_SelectionChanged">
+            <ListBoxItem Content="Canada"/>
+            <ListBoxItem Content="England"/>
+            <ListBoxItem Content="Peru"/>
+            <ListBoxItem Content="China"/>
+            <ListBoxItem Content="Egypt"/>
+        </ListBox>
     </Canvas>
 </Window>
