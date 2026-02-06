@@ -7,10 +7,11 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Canvas>
-        <StackPanel Height="101" Width="158" Canvas.Left="43" Canvas.Top="45" Background="LightBlue">
+        <StackPanel Height="77" Width="117" Canvas.Left="43" Canvas.Top="45" Background="LightBlue">
             <Button Content="Button 1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
             <Button Content="Button 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
         </StackPanel>
+        <Image Height="70" Canvas.Left="43" Canvas.Top="147" Width="132" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Car.png"/>
 
     </Canvas>
 </Window>
