@@ -5,13 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:W26Week5WpfControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" FontSize="20" FontWeight="Bold">
     <Canvas>
-        <StackPanel Height="77" Width="117" Canvas.Left="43" Canvas.Top="45" Background="LightBlue">
+        <StackPanel Height="77" Width="117" Canvas.Left="10" Canvas.Top="10" Background="LightBlue">
             <Button Content="Button 1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
             <Button Content="Button 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
         </StackPanel>
-        <Image Height="70" Canvas.Left="43" Canvas.Top="147" Width="132" HorizontalAlignment="Left" VerticalAlignment="Center" Source="/Car.png"/>
+        <Image Height="70" Canvas.Left="10" Canvas.Top="90" Width="132" HorizontalAlignment="Left" VerticalAlignment="Top" Source="/Car.png"/>
+
+        <GroupBox Height="144" Header="Hobbies" Width="165" Canvas.Left="26" Canvas.Top="194" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <StackPanel>
+                <CheckBox Content="Singing"/>
+                <CheckBox Content="Gardening"/>
+                <CheckBox Content="Travelling"/>
+                <CheckBox Content="Bike Riding"/>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="btnGetHobbies" Content="Get Hobbies" Canvas.Left="34" Canvas.Top="355" HorizontalAlignment="Left" VerticalAlignment="Center" Width="157"/>
+        <Label x:Name="lblMessage" Content="" Canvas.Left="552" Canvas.Top="266" Height="121" Width="226" Background="#FFC5FBE9"/>
 
     </Canvas>
 </Window>
