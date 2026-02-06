@@ -15,14 +15,22 @@
 
         <GroupBox Height="144" Header="Hobbies" Width="165" Canvas.Left="26" Canvas.Top="194" HorizontalAlignment="Left" VerticalAlignment="Top">
             <StackPanel>
-                <CheckBox Content="Singing"/>
-                <CheckBox Content="Gardening"/>
-                <CheckBox Content="Travelling"/>
-                <CheckBox Content="Bike Riding"/>
+                <CheckBox x:Name="chkSinging" Content="Singing"/>
+                <CheckBox x:Name="chkGardening" Content="Gardening"/>
+                <CheckBox x:Name="chkTravelling" Content="Travelling"/>
+                <CheckBox x:Name="chkRiding" Content="Bike Riding"/>
             </StackPanel>
         </GroupBox>
-        <Button x:Name="btnGetHobbies" Content="Get Hobbies" Canvas.Left="34" Canvas.Top="355" HorizontalAlignment="Left" VerticalAlignment="Center" Width="157"/>
-        <Label x:Name="lblMessage" Content="" Canvas.Left="552" Canvas.Top="266" Height="121" Width="226" Background="#FFC5FBE9"/>
+        <Button x:Name="btnGetHobbies" Content="Get Hobbies" Canvas.Left="34" Canvas.Top="355" HorizontalAlignment="Left" VerticalAlignment="Center" Width="157" Click="btnGetHobbies_Click"/>
+        <Label x:Name="lblMessage" Content="" Canvas.Left="523" Canvas.Top="265" Height="121" Width="226" Background="#FFC5FBE9"/>
 
+        <GroupBox Height="125" Header="Gender" Width="155" Canvas.Left="188" Canvas.Top="26" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <StackPanel>
+                <RadioButton x:Name="rdoFemale" Content="Female"/>
+                <RadioButton x:Name="rdoMale" Content="Male"/>
+                <RadioButton x:Name="rdoOther" Content="Other"/>
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="btnGetGender" Content="Get Gender" Canvas.Left="188" Canvas.Top="156" Width="157" HorizontalAlignment="Left" VerticalAlignment="Top" Click="btnGetGender_Click"/>
     </Canvas>
 </Window>
