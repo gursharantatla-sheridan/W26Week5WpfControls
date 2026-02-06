@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" FontSize="20" FontWeight="Bold">
     <Canvas>
-        <StackPanel Height="77" Width="117" Canvas.Left="10" Canvas.Top="10" Background="LightBlue">
+        <StackPanel Height="77" Width="117" Canvas.Left="655" Canvas.Top="127" Background="LightBlue">
             <Button Content="Button 1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
             <Button Content="Button 2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
         </StackPanel>
@@ -24,7 +24,7 @@
         <Button x:Name="btnGetHobbies" Content="Get Hobbies" Canvas.Left="34" Canvas.Top="355" HorizontalAlignment="Left" VerticalAlignment="Center" Width="157" Click="btnGetHobbies_Click"/>
         <Label x:Name="lblMessage" Content="" Canvas.Left="523" Canvas.Top="265" Height="121" Width="226" Background="#FFC5FBE9"/>
 
-        <GroupBox Height="125" Header="Gender" Width="155" Canvas.Left="188" Canvas.Top="26" HorizontalAlignment="Center" VerticalAlignment="Top">
+        <GroupBox Height="125" Header="Gender" Width="155" Canvas.Left="190" Canvas.Top="41" HorizontalAlignment="Left" VerticalAlignment="Top">
             <StackPanel>
                 <RadioButton x:Name="rdoFemale" Content="Female"/>
                 <RadioButton x:Name="rdoMale" Content="Male"/>
@@ -40,13 +40,29 @@
             <ComboBoxItem Content="Sydney"/>
         </ComboBox>
         <Button x:Name="btnGetCity" Content="Get City" Canvas.Left="225" Canvas.Top="265" HorizontalAlignment="Left" VerticalAlignment="Center" Width="118" Click="btnGetCity_Click"/>
-        
-        <ListBox x:Name="lstCountries" Height="199" Width="184" Canvas.Left="413" Canvas.Top="34" SelectionChanged="lstCountries_SelectionChanged">
+
+        <ListBox x:Name="lstCountries" Height="199" Width="184" Canvas.Left="414" Canvas.Top="51" SelectionChanged="lstCountries_SelectionChanged">
             <ListBoxItem Content="Canada"/>
             <ListBoxItem Content="England"/>
             <ListBoxItem Content="Peru"/>
             <ListBoxItem Content="China"/>
             <ListBoxItem Content="Egypt"/>
         </ListBox>
+        
+        <Menu Height="24" Width="800" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_New"/>
+                <MenuItem Header="_Open"/>
+                <MenuItem Header="_Save"/>
+                <Separator/>
+                <MenuItem Header="E_xit" Click="MenuItem_Click"/>
+            </MenuItem>
+
+            <MenuItem Header="_Edit">
+                <MenuItem Header="Cu_t"/>
+                <MenuItem Header="_Copy"/>
+                <MenuItem Header="_Paste"/>
+            </MenuItem>
+        </Menu>
     </Canvas>
 </Window>

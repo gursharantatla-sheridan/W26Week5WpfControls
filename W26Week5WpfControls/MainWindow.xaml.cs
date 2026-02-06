@@ -76,5 +76,10 @@ namespace W26Week5WpfControls
                 lblMessage.Content = ((ListBoxItem)lstCountries.SelectedItem).Content;
             }
         }
+
+        private void MenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
